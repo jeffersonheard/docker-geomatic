@@ -12,3 +12,5 @@ The following parameters are required as environment variables.  There's no reas
 * `SRC_FILENAME` - the filename to use for the source data on disk.  
 * `UNZIP_SRC` - set if the source file is a ZIP file, such as a shapefile.  If you shapefile is in a subfolder in the ZIP file and not extracted to the root path, then you should prepend the subfolder path to `SRC_FILENAME` without a leading `/`.
 * `ASSIGN_SRS` - a .PRJ file as a string or the EPSG codestrings like "EPSG:4326" or "EPSG:3857".  This tells docker-geomatic to write out a projection file because the source doesn't include one for some reason.
+
+All typical GDAL and OGR programs installed by default on Ubuntu are supported.
